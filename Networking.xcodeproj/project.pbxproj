@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E493D99A2AD9FF93005180B6 /* SWAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493D9992AD9FF93005180B6 /* SWAPIEndpoints.swift */; };
 		E4EB41892AD2A32400003ED4 /* NetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41882AD2A32400003ED4 /* NetworkingApp.swift */; };
 		E4EB418B2AD2A32400003ED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB418A2AD2A32400003ED4 /* ContentView.swift */; };
 		E4EB418D2AD2A32600003ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EB418C2AD2A32600003ED4 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E493D9992AD9FF93005180B6 /* SWAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIEndpoints.swift; sourceTree = "<group>"; };
 		E4EB41852AD2A32400003ED4 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EB41882AD2A32400003ED4 /* NetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApp.swift; sourceTree = "<group>"; };
 		E4EB418A2AD2A32400003ED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				E4EB41BB2AD2B31500003ED4 /* Endpoint.swift */,
 				E4EB41BD2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift */,
+				E493D9992AD9FF93005180B6 /* SWAPIEndpoints.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EB418B2AD2A32400003ED4 /* ContentView.swift in Sources */,
+				E493D99A2AD9FF93005180B6 /* SWAPIEndpoints.swift in Sources */,
 				E4EB41BE2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift in Sources */,
 				E4EB41892AD2A32400003ED4 /* NetworkingApp.swift in Sources */,
 				E4EB41BC2AD2B31500003ED4 /* Endpoint.swift in Sources */,
