@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E493D99A2AD9FF93005180B6 /* SWAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493D9992AD9FF93005180B6 /* SWAPIEndpoints.swift */; };
+		E493D99C2ADB5240005180B6 /* HTTPStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493D99B2ADB5240005180B6 /* HTTPStatusCodes.swift */; };
 		E4EB41892AD2A32400003ED4 /* NetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41882AD2A32400003ED4 /* NetworkingApp.swift */; };
 		E4EB418B2AD2A32400003ED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB418A2AD2A32400003ED4 /* ContentView.swift */; };
 		E4EB418D2AD2A32600003ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EB418C2AD2A32600003ED4 /* Assets.xcassets */; };
@@ -15,7 +16,7 @@
 		E4EB419A2AD2A32600003ED4 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41992AD2A32600003ED4 /* NetworkingTests.swift */; };
 		E4EB41A42AD2A32600003ED4 /* NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41A32AD2A32600003ED4 /* NetworkingUITests.swift */; };
 		E4EB41A62AD2A32600003ED4 /* NetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41A52AD2A32600003ED4 /* NetworkingUITestsLaunchTests.swift */; };
-		E4EB41B62AD2A3CE00003ED4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41B52AD2A3CE00003ED4 /* Network.swift */; };
+		E4EB41B62AD2A3CE00003ED4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41B52AD2A3CE00003ED4 /* NetworkError.swift */; };
 		E4EB41BC2AD2B31500003ED4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41BB2AD2B31500003ED4 /* Endpoint.swift */; };
 		E4EB41BE2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB41BD2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift */; };
 		E4EB41C02AD3548B00003ED4 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4EB41BF2AD3548B00003ED4 /* config.plist */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		E493D9992AD9FF93005180B6 /* SWAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIEndpoints.swift; sourceTree = "<group>"; };
+		E493D99B2ADB5240005180B6 /* HTTPStatusCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodes.swift; sourceTree = "<group>"; };
 		E4EB41852AD2A32400003ED4 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EB41882AD2A32400003ED4 /* NetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApp.swift; sourceTree = "<group>"; };
 		E4EB418A2AD2A32400003ED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		E4EB419F2AD2A32600003ED4 /* NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EB41A32AD2A32600003ED4 /* NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITests.swift; sourceTree = "<group>"; };
 		E4EB41A52AD2A32600003ED4 /* NetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E4EB41B52AD2A3CE00003ED4 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E4EB41B52AD2A3CE00003ED4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E4EB41BB2AD2B31500003ED4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		E4EB41BD2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyAPIEndpoints.swift; sourceTree = "<group>"; };
 		E4EB41BF2AD3548B00003ED4 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
@@ -161,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E4EB41BA2AD2B1B500003ED4 /* Networking */,
-				E4EB41B52AD2A3CE00003ED4 /* Network.swift */,
+				E4EB41B52AD2A3CE00003ED4 /* NetworkError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 				E4EB41BB2AD2B31500003ED4 /* Endpoint.swift */,
 				E4EB41BD2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift */,
 				E493D9992AD9FF93005180B6 /* SWAPIEndpoints.swift */,
+				E493D99B2ADB5240005180B6 /* HTTPStatusCodes.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -326,7 +329,8 @@
 				E4EB41BE2AD2B8DA00003ED4 /* DummyAPIEndpoints.swift in Sources */,
 				E4EB41892AD2A32400003ED4 /* NetworkingApp.swift in Sources */,
 				E4EB41BC2AD2B31500003ED4 /* Endpoint.swift in Sources */,
-				E4EB41B62AD2A3CE00003ED4 /* Network.swift in Sources */,
+				E4EB41B62AD2A3CE00003ED4 /* NetworkError.swift in Sources */,
+				E493D99C2ADB5240005180B6 /* HTTPStatusCodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
